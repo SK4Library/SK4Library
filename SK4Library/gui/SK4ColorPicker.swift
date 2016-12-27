@@ -57,7 +57,7 @@ public class SK4ColorPicker: UIControl {
 
 	// /////////////////////////////////////////////////////////////
 
-	public override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+	override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
 		guard let touch = touches.first else { return }
 		let pos = touch.location(in: self)
 
@@ -72,7 +72,7 @@ public class SK4ColorPicker: UIControl {
 		}
 	}
 
-	public override func draw(_ rect: CGRect) {
+	override public func draw(_ rect: CGRect) {
 		guard let ic = UIGraphicsGetCurrentContext() else { return }
 
 		ic.setLineWidth(3.0)

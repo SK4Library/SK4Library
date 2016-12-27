@@ -16,6 +16,8 @@
 		870F7B2D1E0DC27A000BB14B /* SK4TextFieldAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F7B2B1E0DC27A000BB14B /* SK4TextFieldAdmin.swift */; };
 		87165C881E0DBC3200317F33 /* SK4TableViewAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87165C861E0DBC3200317F33 /* SK4TableViewAdmin.swift */; };
 		87165C891E0DBC3200317F33 /* SK4TableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87165C871E0DBC3200317F33 /* SK4TableViewSection.swift */; };
+		871DD0301E125851008E6CC0 /* SK4UITableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871DD02F1E125851008E6CC0 /* SK4UITableViewExt.swift */; };
+		8725C9E21E15B82F00507174 /* SK4AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725C9E11E15B82F00507174 /* SK4AlertController.swift */; };
 		874288631DFF79E100E13B40 /* SK4Library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 874288591DFF79E100E13B40 /* SK4Library.framework */; };
 		874288681DFF79E100E13B40 /* SK4LibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874288671DFF79E100E13B40 /* SK4LibraryTests.swift */; };
 		8742886A1DFF79E100E13B40 /* SK4Library.h in Headers */ = {isa = PBXBuildFile; fileRef = 8742885C1DFF79E100E13B40 /* SK4Library.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,16 +31,19 @@
 		874288871DFF7A7800E13B40 /* SK4PauseFlagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874288861DFF7A7800E13B40 /* SK4PauseFlagTests.swift */; };
 		874288E81DFF931700E13B40 /* SK4DateFormatterExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874288E71DFF931700E13B40 /* SK4DateFormatterExt.swift */; };
 		874C1B7F1E0B8887006FBEDA /* SK4ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1B7E1E0B8887006FBEDA /* SK4ArrayExt.swift */; };
-		878F1DD91E1213CC00055364 /* SK4FileManagerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F1DD81E1213CC00055364 /* SK4FileManagerExt.swift */; };
+		877235251E132EC400B88A06 /* SK4BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877235241E132EC400B88A06 /* SK4BorderView.swift */; };
 		878F1DDB1E1214A400055364 /* SK4Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F1DDA1E1214A400055364 /* SK4Library.swift */; };
 		878F1DDD1E12150E00055364 /* SK4Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F1DDC1E12150E00055364 /* SK4Interpolation.swift */; };
 		878F1DDF1E1215DB00055364 /* SK4CGContextExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F1DDE1E1215DB00055364 /* SK4CGContextExt.swift */; };
-		878F1DE11E12161A00055364 /* SK4UIDeviceExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F1DE01E12161A00055364 /* SK4UIDeviceExt.swift */; };
 		878F1DE31E12169C00055364 /* SK4NearlyEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F1DE21E12169C00055364 /* SK4NearlyEqual.swift */; };
 		878F1DE51E12171900055364 /* SK4AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F1DE41E12171900055364 /* SK4AutoLayout.swift */; };
 		878F1DE71E1217BF00055364 /* SK4TextViewAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F1DE61E1217BF00055364 /* SK4TextViewAdmin.swift */; };
 		878F1DE91E1218C400055364 /* SK4ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F1DE81E1218C400055364 /* SK4ColorPicker.swift */; };
 		878F1DEB1E1219A200055364 /* SK4PickerViewAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F1DEA1E1219A200055364 /* SK4PickerViewAdmin.swift */; };
+		8799EB3A1E14CFA5001F8C3A /* SK4ArrayWithHookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8799EB391E14CFA5001F8C3A /* SK4ArrayWithHookTests.swift */; };
+		879A271A1E13817B0081CDB7 /* SK4BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879A27191E13817B0081CDB7 /* SK4BorderButton.swift */; };
+		87A2FB6A1E15B15C002CEA3D /* SK4ArrayExtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A2FB691E15B15C002CEA3D /* SK4ArrayExtTests.swift */; };
+		87A2FB6C1E15B607002CEA3D /* SK4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A2FB6B1E15B607002CEA3D /* SK4App.swift */; };
 		87A77BEA1E0C8600009E4570 /* SK4TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A77BE91E0C8600009E4570 /* SK4TableViewModel.swift */; };
 		87B04E231E0E5D02002E3600 /* SK4ArrayWithHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B04E221E0E5D02002E3600 /* SK4ArrayWithHook.swift */; };
 /* End PBXBuildFile section */
@@ -54,43 +59,48 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		870446871E00E97800742A9C /* SK4KeyboardObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4KeyboardObserver.swift; path = gui/SK4KeyboardObserver.swift; sourceTree = "<group>"; };
-		870446881E00E97800742A9C /* SK4KeyboardUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4KeyboardUserInfo.swift; path = gui/SK4KeyboardUserInfo.swift; sourceTree = "<group>"; };
-		870EDD221E10BB7700EA3A9F /* SK4UIColorExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4UIColorExt.swift; path = extention/SK4UIColorExt.swift; sourceTree = "<group>"; };
-		870F7B261E0DC24B000BB14B /* SK4CollectionExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4CollectionExt.swift; path = extention/SK4CollectionExt.swift; sourceTree = "<group>"; };
-		870F7B271E0DC24B000BB14B /* SK4UIControlExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4UIControlExt.swift; path = extention/SK4UIControlExt.swift; sourceTree = "<group>"; };
-		870F7B2A1E0DC27A000BB14B /* SK4TargetAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4TargetAction.swift; path = gui/SK4TargetAction.swift; sourceTree = "<group>"; };
-		870F7B2B1E0DC27A000BB14B /* SK4TextFieldAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4TextFieldAdmin.swift; path = gui/SK4TextFieldAdmin.swift; sourceTree = "<group>"; };
-		87165C861E0DBC3200317F33 /* SK4TableViewAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4TableViewAdmin.swift; path = gui/SK4TableViewAdmin.swift; sourceTree = "<group>"; };
-		87165C871E0DBC3200317F33 /* SK4TableViewSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4TableViewSection.swift; path = gui/SK4TableViewSection.swift; sourceTree = "<group>"; };
+		870446871E00E97800742A9C /* SK4KeyboardObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4KeyboardObserver.swift; path = gui/SK4KeyboardObserver.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		870446881E00E97800742A9C /* SK4KeyboardUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4KeyboardUserInfo.swift; path = gui/SK4KeyboardUserInfo.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		870EDD221E10BB7700EA3A9F /* SK4UIColorExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4UIColorExt.swift; path = extention/SK4UIColorExt.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		870F7B261E0DC24B000BB14B /* SK4CollectionExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4CollectionExt.swift; path = extention/SK4CollectionExt.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		870F7B271E0DC24B000BB14B /* SK4UIControlExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4UIControlExt.swift; path = extention/SK4UIControlExt.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		870F7B2A1E0DC27A000BB14B /* SK4TargetAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4TargetAction.swift; path = gui/SK4TargetAction.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		870F7B2B1E0DC27A000BB14B /* SK4TextFieldAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4TextFieldAdmin.swift; path = gui/SK4TextFieldAdmin.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		87165C861E0DBC3200317F33 /* SK4TableViewAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4TableViewAdmin.swift; path = gui/SK4TableViewAdmin.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		87165C871E0DBC3200317F33 /* SK4TableViewSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4TableViewSection.swift; path = gui/SK4TableViewSection.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		871DD02F1E125851008E6CC0 /* SK4UITableViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4UITableViewExt.swift; path = extention/SK4UITableViewExt.swift; sourceTree = "<group>"; };
+		8725C9E11E15B82F00507174 /* SK4AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4AlertController.swift; path = gui/SK4AlertController.swift; sourceTree = "<group>"; };
 		874288591DFF79E100E13B40 /* SK4Library.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SK4Library.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8742885C1DFF79E100E13B40 /* SK4Library.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SK4Library.h; sourceTree = "<group>"; };
+		8742885C1DFF79E100E13B40 /* SK4Library.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SK4Library.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		8742885D1DFF79E100E13B40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		874288621DFF79E100E13B40 /* SK4LibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SK4LibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		874288671DFF79E100E13B40 /* SK4LibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SK4LibraryTests.swift; sourceTree = "<group>"; };
 		874288691DFF79E100E13B40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		874288731DFF7A3700E13B40 /* SK4LeakCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4LeakCheck.swift; path = core/SK4LeakCheck.swift; sourceTree = "<group>"; };
-		874288741DFF7A3700E13B40 /* SK4Notify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4Notify.swift; path = core/SK4Notify.swift; sourceTree = "<group>"; };
-		874288751DFF7A3700E13B40 /* SK4PauseFlag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4PauseFlag.swift; path = core/SK4PauseFlag.swift; sourceTree = "<group>"; };
-		874288791DFF7A4300E13B40 /* SK4DispatchQueueExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4DispatchQueueExt.swift; path = extention/SK4DispatchQueueExt.swift; sourceTree = "<group>"; };
-		8742887A1DFF7A4300E13B40 /* SK4StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4StringExt.swift; path = extention/SK4StringExt.swift; sourceTree = "<group>"; };
-		8742887B1DFF7A4300E13B40 /* SK4UIBarButtonItemExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4UIBarButtonItemExt.swift; path = extention/SK4UIBarButtonItemExt.swift; sourceTree = "<group>"; };
-		874288801DFF7A4D00E13B40 /* SK4TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4TableViewController.swift; path = gui/SK4TableViewController.swift; sourceTree = "<group>"; };
+		874288731DFF7A3700E13B40 /* SK4LeakCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4LeakCheck.swift; path = core/SK4LeakCheck.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		874288741DFF7A3700E13B40 /* SK4Notify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4Notify.swift; path = core/SK4Notify.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		874288751DFF7A3700E13B40 /* SK4PauseFlag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4PauseFlag.swift; path = core/SK4PauseFlag.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		874288791DFF7A4300E13B40 /* SK4DispatchQueueExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4DispatchQueueExt.swift; path = extention/SK4DispatchQueueExt.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		8742887A1DFF7A4300E13B40 /* SK4StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4StringExt.swift; path = extention/SK4StringExt.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		8742887B1DFF7A4300E13B40 /* SK4UIBarButtonItemExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4UIBarButtonItemExt.swift; path = extention/SK4UIBarButtonItemExt.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		874288801DFF7A4D00E13B40 /* SK4TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4TableViewController.swift; path = gui/SK4TableViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		874288861DFF7A7800E13B40 /* SK4PauseFlagTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SK4PauseFlagTests.swift; sourceTree = "<group>"; };
-		874288E71DFF931700E13B40 /* SK4DateFormatterExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4DateFormatterExt.swift; path = extention/SK4DateFormatterExt.swift; sourceTree = "<group>"; };
-		874C1B7E1E0B8887006FBEDA /* SK4ArrayExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ArrayExt.swift; path = extention/SK4ArrayExt.swift; sourceTree = "<group>"; };
-		878F1DD81E1213CC00055364 /* SK4FileManagerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4FileManagerExt.swift; path = extention/SK4FileManagerExt.swift; sourceTree = "<group>"; };
-		878F1DDA1E1214A400055364 /* SK4Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SK4Library.swift; sourceTree = "<group>"; };
-		878F1DDC1E12150E00055364 /* SK4Interpolation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4Interpolation.swift; path = core/SK4Interpolation.swift; sourceTree = "<group>"; };
-		878F1DDE1E1215DB00055364 /* SK4CGContextExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4CGContextExt.swift; path = extention/SK4CGContextExt.swift; sourceTree = "<group>"; };
-		878F1DE01E12161A00055364 /* SK4UIDeviceExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4UIDeviceExt.swift; path = extention/SK4UIDeviceExt.swift; sourceTree = "<group>"; };
-		878F1DE21E12169C00055364 /* SK4NearlyEqual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4NearlyEqual.swift; path = core/SK4NearlyEqual.swift; sourceTree = "<group>"; };
-		878F1DE41E12171900055364 /* SK4AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4AutoLayout.swift; path = gui/SK4AutoLayout.swift; sourceTree = "<group>"; };
-		878F1DE61E1217BF00055364 /* SK4TextViewAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4TextViewAdmin.swift; path = gui/SK4TextViewAdmin.swift; sourceTree = "<group>"; };
-		878F1DE81E1218C400055364 /* SK4ColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ColorPicker.swift; path = gui/SK4ColorPicker.swift; sourceTree = "<group>"; };
-		878F1DEA1E1219A200055364 /* SK4PickerViewAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4PickerViewAdmin.swift; path = gui/SK4PickerViewAdmin.swift; sourceTree = "<group>"; };
-		87A77BE91E0C8600009E4570 /* SK4TableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4TableViewModel.swift; path = gui/SK4TableViewModel.swift; sourceTree = "<group>"; };
-		87B04E221E0E5D02002E3600 /* SK4ArrayWithHook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ArrayWithHook.swift; path = core/SK4ArrayWithHook.swift; sourceTree = "<group>"; };
+		874288E71DFF931700E13B40 /* SK4DateFormatterExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4DateFormatterExt.swift; path = extention/SK4DateFormatterExt.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		874C1B7E1E0B8887006FBEDA /* SK4ArrayExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4ArrayExt.swift; path = extention/SK4ArrayExt.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		877235241E132EC400B88A06 /* SK4BorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4BorderView.swift; path = gui/SK4BorderView.swift; sourceTree = "<group>"; };
+		878F1DDA1E1214A400055364 /* SK4Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SK4Library.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		878F1DDC1E12150E00055364 /* SK4Interpolation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4Interpolation.swift; path = core/SK4Interpolation.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		878F1DDE1E1215DB00055364 /* SK4CGContextExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4CGContextExt.swift; path = extention/SK4CGContextExt.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		878F1DE21E12169C00055364 /* SK4NearlyEqual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4NearlyEqual.swift; path = core/SK4NearlyEqual.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		878F1DE41E12171900055364 /* SK4AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4AutoLayout.swift; path = gui/SK4AutoLayout.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		878F1DE61E1217BF00055364 /* SK4TextViewAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4TextViewAdmin.swift; path = gui/SK4TextViewAdmin.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		878F1DE81E1218C400055364 /* SK4ColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4ColorPicker.swift; path = gui/SK4ColorPicker.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		878F1DEA1E1219A200055364 /* SK4PickerViewAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4PickerViewAdmin.swift; path = gui/SK4PickerViewAdmin.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		8799EB391E14CFA5001F8C3A /* SK4ArrayWithHookTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SK4ArrayWithHookTests.swift; sourceTree = "<group>"; };
+		879A27191E13817B0081CDB7 /* SK4BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4BorderButton.swift; path = gui/SK4BorderButton.swift; sourceTree = "<group>"; };
+		87A2FB691E15B15C002CEA3D /* SK4ArrayExtTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SK4ArrayExtTests.swift; sourceTree = "<group>"; };
+		87A2FB6B1E15B607002CEA3D /* SK4App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SK4App.swift; sourceTree = "<group>"; };
+		87A77BE91E0C8600009E4570 /* SK4TableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4TableViewModel.swift; path = gui/SK4TableViewModel.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		87B04E221E0E5D02002E3600 /* SK4ArrayWithHook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4ArrayWithHook.swift; path = core/SK4ArrayWithHook.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +145,7 @@
 			children = (
 				8742885C1DFF79E100E13B40 /* SK4Library.h */,
 				878F1DDA1E1214A400055364 /* SK4Library.swift */,
+				87A2FB6B1E15B607002CEA3D /* SK4App.swift */,
 				874288851DFF7A6900E13B40 /* core */,
 				874288841DFF7A6200E13B40 /* extention */,
 				874288831DFF7A5200E13B40 /* gui */,
@@ -148,6 +159,8 @@
 			children = (
 				874288671DFF79E100E13B40 /* SK4LibraryTests.swift */,
 				874288861DFF7A7800E13B40 /* SK4PauseFlagTests.swift */,
+				8799EB391E14CFA5001F8C3A /* SK4ArrayWithHookTests.swift */,
+				87A2FB691E15B15C002CEA3D /* SK4ArrayExtTests.swift */,
 				874288691DFF79E100E13B40 /* Info.plist */,
 			);
 			path = SK4LibraryTests;
@@ -156,11 +169,14 @@
 		874288831DFF7A5200E13B40 /* gui */ = {
 			isa = PBXGroup;
 			children = (
+				8725C9E11E15B82F00507174 /* SK4AlertController.swift */,
 				878F1DE41E12171900055364 /* SK4AutoLayout.swift */,
-				878F1DEA1E1219A200055364 /* SK4PickerViewAdmin.swift */,
+				879A27191E13817B0081CDB7 /* SK4BorderButton.swift */,
+				877235241E132EC400B88A06 /* SK4BorderView.swift */,
 				878F1DE81E1218C400055364 /* SK4ColorPicker.swift */,
 				870446871E00E97800742A9C /* SK4KeyboardObserver.swift */,
 				870446881E00E97800742A9C /* SK4KeyboardUserInfo.swift */,
+				878F1DEA1E1219A200055364 /* SK4PickerViewAdmin.swift */,
 				87165C861E0DBC3200317F33 /* SK4TableViewAdmin.swift */,
 				874288801DFF7A4D00E13B40 /* SK4TableViewController.swift */,
 				87A77BE91E0C8600009E4570 /* SK4TableViewModel.swift */,
@@ -180,12 +196,11 @@
 				870F7B261E0DC24B000BB14B /* SK4CollectionExt.swift */,
 				874288E71DFF931700E13B40 /* SK4DateFormatterExt.swift */,
 				874288791DFF7A4300E13B40 /* SK4DispatchQueueExt.swift */,
-				878F1DD81E1213CC00055364 /* SK4FileManagerExt.swift */,
 				8742887A1DFF7A4300E13B40 /* SK4StringExt.swift */,
 				8742887B1DFF7A4300E13B40 /* SK4UIBarButtonItemExt.swift */,
 				870EDD221E10BB7700EA3A9F /* SK4UIColorExt.swift */,
 				870F7B271E0DC24B000BB14B /* SK4UIControlExt.swift */,
-				878F1DE01E12161A00055364 /* SK4UIDeviceExt.swift */,
+				871DD02F1E125851008E6CC0 /* SK4UITableViewExt.swift */,
 			);
 			name = extention;
 			sourceTree = "<group>";
@@ -316,8 +331,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				879A271A1E13817B0081CDB7 /* SK4BorderButton.swift in Sources */,
 				874288821DFF7A4D00E13B40 /* SK4TableViewController.swift in Sources */,
 				87165C881E0DBC3200317F33 /* SK4TableViewAdmin.swift in Sources */,
+				871DD0301E125851008E6CC0 /* SK4UITableViewExt.swift in Sources */,
 				87165C891E0DBC3200317F33 /* SK4TableViewSection.swift in Sources */,
 				8742887D1DFF7A4300E13B40 /* SK4StringExt.swift in Sources */,
 				870F7B291E0DC24B000BB14B /* SK4UIControlExt.swift in Sources */,
@@ -326,20 +343,21 @@
 				870F7B2C1E0DC27A000BB14B /* SK4TargetAction.swift in Sources */,
 				874288781DFF7A3700E13B40 /* SK4PauseFlag.swift in Sources */,
 				8742887E1DFF7A4300E13B40 /* SK4UIBarButtonItemExt.swift in Sources */,
-				878F1DD91E1213CC00055364 /* SK4FileManagerExt.swift in Sources */,
 				874288761DFF7A3700E13B40 /* SK4LeakCheck.swift in Sources */,
+				87A2FB6C1E15B607002CEA3D /* SK4App.swift in Sources */,
 				8704468A1E00E97800742A9C /* SK4KeyboardUserInfo.swift in Sources */,
 				870F7B2D1E0DC27A000BB14B /* SK4TextFieldAdmin.swift in Sources */,
 				87A77BEA1E0C8600009E4570 /* SK4TableViewModel.swift in Sources */,
 				870446891E00E97800742A9C /* SK4KeyboardObserver.swift in Sources */,
 				878F1DDB1E1214A400055364 /* SK4Library.swift in Sources */,
 				8742887C1DFF7A4300E13B40 /* SK4DispatchQueueExt.swift in Sources */,
-				878F1DE11E12161A00055364 /* SK4UIDeviceExt.swift in Sources */,
 				878F1DDF1E1215DB00055364 /* SK4CGContextExt.swift in Sources */,
 				87B04E231E0E5D02002E3600 /* SK4ArrayWithHook.swift in Sources */,
 				878F1DEB1E1219A200055364 /* SK4PickerViewAdmin.swift in Sources */,
 				870EDD231E10BB7700EA3A9F /* SK4UIColorExt.swift in Sources */,
+				8725C9E21E15B82F00507174 /* SK4AlertController.swift in Sources */,
 				878F1DE91E1218C400055364 /* SK4ColorPicker.swift in Sources */,
+				877235251E132EC400B88A06 /* SK4BorderView.swift in Sources */,
 				878F1DE31E12169C00055364 /* SK4NearlyEqual.swift in Sources */,
 				878F1DDD1E12150E00055364 /* SK4Interpolation.swift in Sources */,
 				878F1DE71E1217BF00055364 /* SK4TextViewAdmin.swift in Sources */,
@@ -354,6 +372,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				874288681DFF79E100E13B40 /* SK4LibraryTests.swift in Sources */,
+				8799EB3A1E14CFA5001F8C3A /* SK4ArrayWithHookTests.swift in Sources */,
+				87A2FB6A1E15B15C002CEA3D /* SK4ArrayExtTests.swift in Sources */,
 				874288871DFF7A7800E13B40 /* SK4PauseFlagTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

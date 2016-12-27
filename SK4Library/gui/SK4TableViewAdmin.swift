@@ -15,7 +15,7 @@ open class SK4TableViewAdmin: SK4TableViewModel {
 	public var sectionArray = SK4ArrayWithHook<SK4TableViewSection>()
 
 	/// 初期化
-	public override init() {
+	override public init() {
 		super.init()
 
 		// フックを設定

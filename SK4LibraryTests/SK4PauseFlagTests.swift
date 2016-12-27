@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import SK4Tools
+import SK4Library
 
 class PauseFlagTests: XCTestCase {
 
