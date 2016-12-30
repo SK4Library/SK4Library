@@ -1,5 +1,5 @@
 
-# SK4Library [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/SK4Library/SK4Library/master/LICENSE.txt) [![GitHub release](https://img.shields.io/github/release/carthage/carthage.svg)](https://github.com/SK4Library/SK4Library/releases)
+# SK4Library [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/SK4Library/SK4Library/master/LICENSE.txt) [![GitHub release](https://img.shields.io/github/release/SK4Library/SK4Library.svg)](https://github.com/SK4Library/SK4Library/releases)
 
 SK4Libraryは、そこそこ便利な機能をまとめたフレームワークです。たぶん。
 
@@ -16,7 +16,7 @@ SK4Libraryは、そこそこ便利な機能をまとめたフレームワーク�
 
 ## 説明書
 
-今のところありません。
+今のところありません。そんなに難しいことはやってないので、ソースコードを見てもらうのが早いでしょう。たぶん。
 
 
 ## 使い方
