@@ -10,7 +10,7 @@ import UIKit
 
 /// 枠線付きのボタン
 @IBDesignable
-public class SK4BorderButton: UIButton {
+open class SK4BorderButton: UIButton {
 
 	/// まとめてボタンを生成・設定
 	public static func make(frame: CGRect = .zero, title: String = "") -> SK4BorderButton {
@@ -24,27 +24,27 @@ public class SK4BorderButton: UIButton {
 	// /////////////////////////////////////////////////////////////
 	// MARK: - 枠線関係の設定など
 
-	@IBInspectable public var borderWidth: CGFloat = 1.0 {
+	@IBInspectable open var borderWidth: CGFloat = 1.0 {
 		didSet {
 			layer.borderWidth = borderWidth
 			setNeedsDisplay()
 		}
 	}
 
-	@IBInspectable public var cornerRadius: CGFloat = 4.0 {
+	@IBInspectable open var cornerRadius: CGFloat = 4.0 {
 		didSet {
 			layer.cornerRadius = cornerRadius
 			setNeedsDisplay()
 		}
 	}
 
-	override public var isEnabled: Bool {
+	override open var isEnabled: Bool {
 		didSet {
 			layer.borderColor = currentTitleColor.cgColor
 		}
 	}
 
-	override public var isHighlighted: Bool {
+	override open var isHighlighted: Bool {
 		didSet {
 			let col = currentTitleColor
 			let key = "borderColor"
@@ -64,12 +64,22 @@ public class SK4BorderButton: UIButton {
 		}
 	}
 
-	override public func tintColorDidChange() {
+	override public init(frame: CGRect) {
+		super.init(frame: frame)
+		setupBorder()
+	}
+
+	required public init?(coder aDecoder: NSCoder) {
+		super.init(coder: aDecoder)
+		setupBorder()
+	}
+
+	override open func tintColorDidChange() {
 		super.tintColorDidChange()
 		layer.borderColor = currentTitleColor.cgColor
 	}
 
-	public func setupBorder() {
+	open func setupBorder() {
 		layer.borderWidth = borderWidth
 		layer.cornerRadius = cornerRadius
 		layer.borderColor = currentTitleColor.cgColor

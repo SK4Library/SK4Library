@@ -10,34 +10,34 @@ import UIKit
 
 /// 簡単なカラーピッカー
 @IBDesignable
-public class SK4ColorPicker: UIControl {
+open class SK4ColorPicker: UIControl {
 
 	// /////////////////////////////////////////////////////////////
 	// MARK: - プロパティ＆初期化
 
 	/// 水平方向の分割数
-	@IBInspectable public var divX: Int = 12 {
+	@IBInspectable open var divX: Int = 12 {
 		didSet {
 			setNeedsDisplay()
 		}
 	}
 
 	/// 垂直方向の分割数
-	@IBInspectable public var divY: Int = 8 {
+	@IBInspectable open var divY: Int = 8 {
 		didSet {
 			setNeedsDisplay()
 		}
 	}
 
 	/// 各色を描画するときの余白
-	@IBInspectable public var margin: CGFloat = 2 {
+	@IBInspectable open var margin: CGFloat = 2 {
 		didSet {
 			setNeedsDisplay()
 		}
 	}
 
 	/// 選択した色
-	public var color = UIColor.white {
+	open var color = UIColor.white {
 		didSet {
 			setNeedsDisplay()
 		}
@@ -57,7 +57,7 @@ public class SK4ColorPicker: UIControl {
 
 	// /////////////////////////////////////////////////////////////
 
-	override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+	override open func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
 		guard let touch = touches.first else { return }
 		let pos = touch.location(in: self)
 
@@ -72,7 +72,7 @@ public class SK4ColorPicker: UIControl {
 		}
 	}
 
-	override public func draw(_ rect: CGRect) {
+	override open func draw(_ rect: CGRect) {
 		guard let ic = UIGraphicsGetCurrentContext() else { return }
 
 		ic.setLineWidth(3.0)
@@ -89,7 +89,7 @@ public class SK4ColorPicker: UIControl {
 		}
 	}
 
-	override public func layoutSubviews() {
+	override open func layoutSubviews() {
 		super.layoutSubviews()
 
 		setNeedsDisplay()
