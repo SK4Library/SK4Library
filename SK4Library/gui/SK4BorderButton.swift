@@ -12,6 +12,18 @@ import UIKit
 @IBDesignable
 public class SK4BorderButton: UIButton {
 
+	/// まとめてボタンを生成・設定
+	public static func make(frame: CGRect = .zero, title: String = "") -> SK4BorderButton {
+		let button = SK4BorderButton(type: .system)
+		button.setupBorder()
+		button.frame = frame
+		button.setTitle(title, for: .normal)
+		return button
+	}
+
+	// /////////////////////////////////////////////////////////////
+	// MARK: - 枠線関係の設定など
+
 	@IBInspectable public var borderWidth: CGFloat = 1.0 {
 		didSet {
 			layer.borderWidth = borderWidth
@@ -50,16 +62,6 @@ public class SK4BorderButton: UIButton {
 				layer.add(anim, forKey: key)
 			}
 		}
-	}
-
-	override public init(frame: CGRect) {
-		super.init(frame: frame)
-		setupBorder()
-	}
-
-	required public init?(coder aDecoder: NSCoder) {
-		super.init(coder: aDecoder)
-		setupBorder()
 	}
 
 	override public func tintColorDidChange() {
