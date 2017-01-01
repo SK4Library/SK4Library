@@ -48,6 +48,10 @@ open class SK4App {
 		}
 	}
 
+	/// 初期化
+	public init() {
+	}
+
 }
 
 // eof

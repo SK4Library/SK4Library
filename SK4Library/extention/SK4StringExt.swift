@@ -114,6 +114,16 @@ extension String {
 		}
 	}
 
+	// /////////////////////////////////////////////////////////////
+	// MARK: - ファイル名
+
+	/// ディレクトリの文字列にファイル名を連結
+	public func appendingPath(_ fn: String) -> String {
+		return nsString.appendingPathComponent(fn)
+	}
+	
+
+
 
 /*
 
@@ -169,14 +179,6 @@ extension String {
 		} catch {
 			return false
 		}
-	}
-
-	// /////////////////////////////////////////////////////////////
-	// MARK: - ファイル名
-
-	/// ディレクトリの文字列にファイル名を連結
-	public func sk4AppendingPath(fn: String) -> String {
-		return nsString.stringByAppendingPathComponent(fn)
 	}
 
 	// /////////////////////////////////////////////////////////////
